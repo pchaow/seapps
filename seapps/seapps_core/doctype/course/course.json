@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2024-03-07 15:17:13.032749",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "course_code",
+  "course_name_th",
+  "course_name_en",
+  "course_desc_th",
+  "course_objective",
+  "course_desc_en",
+  "program",
+  "program_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CODE",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e23\u0e2b\u0e31\u0e2a\u0e27\u0e34\u0e0a\u0e32",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_name_th",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e0a\u0e37\u0e48\u0e2d\u0e27\u0e34\u0e0a\u0e32\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_name_en",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e0a\u0e37\u0e48\u0e2d\u0e27\u0e34\u0e0a\u0e32\u0e20\u0e32\u0e29\u0e32\u0e2d\u0e31\u0e07\u0e01\u0e24\u0e29",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_desc_th",
+   "fieldtype": "Text",
+   "label": "\u0e04\u0e33\u0e2d\u0e18\u0e34\u0e1a\u0e32\u0e22\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22"
+  },
+  {
+   "fieldname": "course_objective",
+   "fieldtype": "Text Editor",
+   "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32"
+  },
+  {
+   "fieldname": "course_desc_en",
+   "fieldtype": "Text",
+   "label": "\u0e04\u0e33\u0e2d\u0e18\u0e34\u0e1a\u0e32\u0e22\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32\u0e20\u0e32\u0e29\u0e32\u0e2d\u0e31\u0e07\u0e01\u0e24\u0e29"
+  },
+  {
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23",
+   "options": "Program"
+  },
+  {
+   "fetch_from": "program.program_code",
+   "fieldname": "program_code",
+   "fieldtype": "Data",
+   "label": "\u0e23\u0e2b\u0e31\u0e2a\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-07 15:25:36.066372",
+ "modified_by": "Administrator",
+ "module": "seapps_core",
+ "name": "Course",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

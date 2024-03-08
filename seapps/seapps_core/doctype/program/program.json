@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:[{program_code}]",
+ "creation": "2024-03-07 14:20:27.735455",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_tab",
+  "basic_information",
+  "is_new_program",
+  "program_code",
+  "program_name",
+  "program_year",
+  "adapt_from",
+  "program_type",
+  "objectives_tab",
+  "btn_add_objective",
+  "datatable",
+  "elo_tab",
+  "btn_add_elo",
+  "lo_datatable"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e0a\u0e37\u0e48\u0e2d\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23",
+   "reqd": 1
+  },
+  {
+   "fieldname": "program_year",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e1b\u0e35",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_new_program",
+   "fieldtype": "Check",
+   "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e43\u0e2b\u0e21\u0e48"
+  },
+  {
+   "fieldname": "adapt_from",
+   "fieldtype": "Link",
+   "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e01\u0e48\u0e2d\u0e19\u0e2b\u0e19\u0e49\u0e32",
+   "options": "Program"
+  },
+  {
+   "default": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e1b\u0e01\u0e15\u0e34",
+   "fieldname": "program_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "\u0e1b\u0e23\u0e30\u0e40\u0e20\u0e17",
+   "options": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e1b\u0e01\u0e15\u0e34\n\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e23\u0e30\u0e22\u0e30\u0e2a\u0e31\u0e49\u0e19 (Non-Degree)\n\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23\u0e25\u0e48\u0e27\u0e07\u0e2b\u0e19\u0e49\u0e32 (Pre-Degree)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Section Break",
+   "label": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19"
+  },
+  {
+   "fieldname": "program_code",
+   "fieldtype": "Data",
+   "label": "\u0e23\u0e2b\u0e31\u0e2a\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "basic_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e1e\u0e37\u0e49\u0e19\u0e10\u0e32\u0e19"
+  },
+  {
+   "fieldname": "objectives_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
+  },
+  {
+   "fieldname": "elo_tab",
+   "fieldtype": "Tab Break",
+   "label": "ELO"
+  },
+  {
+   "fieldname": "btn_add_objective",
+   "fieldtype": "Button",
+   "label": "\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
+  },
+  {
+   "fieldname": "btn_add_elo",
+   "fieldtype": "Button",
+   "label": "\u0e40\u0e1e\u0e34\u0e48\u0e21 ELO"
+  },
+  {
+   "fieldname": "datatable",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "lo_datatable",
+   "fieldtype": "HTML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-08 17:12:46.436684",
+ "modified_by": "Administrator",
+ "module": "seapps_core",
+ "name": "Program",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "program_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "program_name"
+}
