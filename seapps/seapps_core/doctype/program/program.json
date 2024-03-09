@@ -19,7 +19,8 @@
   "datatable",
   "elo_tab",
   "btn_add_elo",
-  "lo_datatable"
+  "lo_datatable",
+  "courses_tab"
  ],
  "fields": [
   {
@@ -101,11 +102,16 @@
   {
    "fieldname": "lo_datatable",
    "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "courses_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-08 17:12:46.436684",
+ "modified": "2024-03-08 22:48:35.703975",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "Program",
