@@ -1,12 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoname",
+ "autoname": "field:code",
  "creation": "2024-03-07 14:38:21.419046",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "code",
   "objective",
   "program"
  ],
@@ -27,15 +28,23 @@
    "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23",
    "options": "Program",
    "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e23\u0e2b\u0e31\u0e2a",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-08 17:19:57.259487",
+ "modified": "2024-03-09 09:38:38.946023",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "ProgramObjective",
- "naming_rule": "By script",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

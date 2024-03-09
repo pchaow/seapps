@@ -15,12 +15,16 @@ class ProgramLearningOutcome(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		code: DF.Data | None
 		lo_description: DF.Text
 		program: DF.Link
 	# end: auto-generated types
 
-	def autoname(self) :
+	def before_insert(self) :
 		program = frappe.get_doc("Program",self.program)
-		prefix = f"{program.program_code}-ELO"
+		prefix = f"{program.program_code}-OBJ"
 		self.name = f"{prefix}-{getseries(prefix,3)}"
+		self.code = self.name
 	pass
+
+

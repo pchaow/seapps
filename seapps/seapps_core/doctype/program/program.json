@@ -15,10 +15,8 @@
   "adapt_from",
   "program_type",
   "objectives_tab",
-  "btn_add_objective",
-  "datatable",
+  "objective_table",
   "elo_tab",
-  "btn_add_elo",
   "lo_datatable",
   "courses_tab"
  ],
@@ -86,32 +84,24 @@
    "label": "ELO"
   },
   {
-   "fieldname": "btn_add_objective",
-   "fieldtype": "Button",
-   "label": "\u0e40\u0e1e\u0e34\u0e48\u0e21\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
-  },
-  {
-   "fieldname": "btn_add_elo",
-   "fieldtype": "Button",
-   "label": "\u0e40\u0e1e\u0e34\u0e48\u0e21 ELO"
-  },
-  {
-   "fieldname": "datatable",
-   "fieldtype": "HTML"
-  },
-  {
    "fieldname": "lo_datatable",
-   "fieldtype": "HTML"
+   "fieldtype": "HTML",
+   "label": "\u0e1c\u0e25\u0e01\u0e32\u0e23\u0e40\u0e23\u0e35\u0e22\u0e19\u0e23\u0e39\u0e49"
   },
   {
    "fieldname": "courses_tab",
    "fieldtype": "Tab Break",
    "label": "\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32"
+  },
+  {
+   "fieldname": "objective_table",
+   "fieldtype": "HTML",
+   "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-08 22:48:35.703975",
+ "modified": "2024-03-10 00:55:21.101052",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "Program",
