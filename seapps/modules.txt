@@ -1,1 +1,2 @@
-Seapps
+seapps
+seapps_core

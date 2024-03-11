@@ -5,7 +5,6 @@ import frappe
 from frappe.model.document import Document
 from frappe.model.naming import getseries
 
-from seapps.seapps_core.doctype.program.program import Program
 
 class ProgramObjective(Document):
 	# begin: auto-generated types

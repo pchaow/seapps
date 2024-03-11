@@ -13,8 +13,8 @@ class StudentProject(Document):
 
 	if TYPE_CHECKING:
 		from frappe.types import DF
-		from seapps.seapps_core.doctype.projectadvisor.projectadvisor import ProjectAdvisor
-		from seapps.seapps_core.doctype.projectoperator.projectoperator import ProjectOperator
+		from seapps.seapps.doctype.projectadvisor.projectadvisor import ProjectAdvisor
+		from seapps.seapps.doctype.projectoperator.projectoperator import ProjectOperator
 
 		advisor: DF.Table[ProjectAdvisor]
 		project_descriptoin: DF.LongText | None
