@@ -7,15 +7,22 @@
  "field_order": [
   "project_name",
   "semester",
+  "column_break_toxs",
+  "subject_text",
+  "company_text",
+  "section_break_jifj",
   "project_descriptoin",
+  "operators",
   "advisor",
-  "project_operators"
+  "files"
  ],
  "fields": [
   {
    "fieldname": "project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "\u0e0a\u0e37\u0e48\u0e2d\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23",
    "reqd": 1
   },
@@ -31,23 +38,58 @@
    "options": "ProjectAdvisor"
   },
   {
-   "fieldname": "project_operators",
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0e20\u0e32\u0e04\u0e40\u0e23\u0e35\u0e22\u0e19",
+   "options": "Semester",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operators",
    "fieldtype": "Table",
    "label": "\u0e1c\u0e39\u0e49\u0e14\u0e33\u0e40\u0e19\u0e34\u0e19\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23",
    "options": "ProjectOperator"
   },
   {
-   "fieldname": "semester",
-   "fieldtype": "Link",
+   "fieldname": "column_break_toxs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_text",
+   "fieldtype": "Data",
+   "in_filter": 1,
    "in_list_view": 1,
-   "label": "\u0e20\u0e32\u0e04\u0e40\u0e23\u0e35\u0e22\u0e19",
-   "options": "Semester",
-   "reqd": 1
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0e1a\u0e23\u0e34\u0e29\u0e31\u0e17"
+  },
+  {
+   "fieldname": "subject_text",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "\u0e27\u0e34\u0e0a\u0e32"
+  },
+  {
+   "fieldname": "section_break_jifj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "files",
+   "fieldtype": "Table",
+   "label": "\u0e44\u0e1f\u0e25\u0e4c",
+   "options": "ProjectFile"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-11 15:35:37.586707",
+ "modified": "2024-03-11 22:25:48.514576",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "StudentProject",
@@ -66,7 +108,10 @@
    "write": 1
   }
  ],
+ "search_fields": "project_name,company_text,subject_text",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "project_name"
 }
