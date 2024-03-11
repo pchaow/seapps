@@ -1,9 +1,9 @@
 [project]
 name = "seapps"
 authors = [
-    { name = "SE@UP", email = "chaow.po@up.ac.th"}
+    { name = "test", email = "test@test.test"}
 ]
-description = "Software Engineer Department App"
+description = "test"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]

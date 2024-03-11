@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-10 09:26:09.536106",
+ "default_view": "Tree",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_m4z1",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_coursegroup",
+  "section_break_btqr",
+  "course_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_m4z1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "CourseGroup"
+  },
+  {
+   "fieldname": "parent_coursegroup",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent CourseGroup",
+   "options": "CourseGroup"
+  },
+  {
+   "fieldname": "section_break_btqr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e1b\u0e23\u0e30\u0e40\u0e20\u0e17/\u0e01\u0e25\u0e38\u0e48\u0e21/\u0e2b\u0e21\u0e27\u0e14\u0e2b\u0e21\u0e39\u0e48",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-03-10 09:31:04.037344",
+ "modified_by": "Administrator",
+ "module": "seapps_core",
+ "name": "CourseGroup",
+ "nsm_parent_field": "parent_coursegroup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "course_type",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "course_type"
+}

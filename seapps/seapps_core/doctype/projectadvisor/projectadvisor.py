@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class Course(Document):
+class ProjectAdvisor(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,18 +14,11 @@ class Course(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		code: DF.Data | None
-		course_code: DF.Data
-		course_desc_en: DF.Text | None
-		course_desc_th: DF.Text | None
-		course_name_en: DF.Data
-		course_name_th: DF.Data
-		course_objective: DF.TextEditor | None
-		course_type: DF.Link
-		credit: DF.Int
-		credit_assign: DF.Data
-		program: DF.Link
-		remark: DF.Text | None
+		advisor: DF.Link | None
+		level: DF.Literal["\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32\u0e2b\u0e25\u0e31\u0e01", "\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32\u0e23\u0e48\u0e27\u0e21", "\u0e01\u0e23\u0e23\u0e21\u0e01\u0e32\u0e23"]
+		parent: DF.Data
+		parentfield: DF.Data
+		parenttype: DF.Data
 	# end: auto-generated types
 
 	pass

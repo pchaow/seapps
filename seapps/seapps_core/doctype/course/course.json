@@ -8,14 +8,25 @@
  "engine": "InnoDB",
  "field_order": [
   "code",
-  "course_code",
-  "course_name_th",
-  "course_name_en",
-  "course_desc_th",
-  "course_objective",
-  "course_desc_en",
+  "column_break_lkgy",
   "program",
-  "program_code"
+  "section_break_mxnm",
+  "course_type",
+  "column_break_clos",
+  "course_code",
+  "section_break_qtaf",
+  "credit",
+  "column_break_qqho",
+  "credit_assign",
+  "section_break_rnrz",
+  "course_name_th",
+  "column_break_omwi",
+  "course_name_en",
+  "section_break_rgxv",
+  "course_objective",
+  "course_desc_th",
+  "course_desc_en",
+  "remark"
  ],
  "fields": [
   {
@@ -23,7 +34,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "CODE",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -66,18 +76,70 @@
    "fieldname": "program",
    "fieldtype": "Link",
    "label": "\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23",
-   "options": "Program"
+   "options": "Program",
+   "reqd": 1
   },
   {
-   "fetch_from": "program.program_code",
-   "fieldname": "program_code",
+   "fieldname": "column_break_lkgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rgxv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Link",
+   "label": "\u0e1b\u0e23\u0e30\u0e40\u0e20\u0e17\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32",
+   "options": "CourseGroup",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mxnm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_clos",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qtaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Int",
+   "label": "\u0e2b\u0e19\u0e48\u0e27\u0e22\u0e01\u0e34\u0e15",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qqho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "credit_assign",
    "fieldtype": "Data",
-   "label": "\u0e23\u0e2b\u0e31\u0e2a\u0e2b\u0e25\u0e31\u0e01\u0e2a\u0e39\u0e15\u0e23"
+   "label": "\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e2a\u0e23\u0e23\u0e2b\u0e19\u0e48\u0e27\u0e22\u0e01\u0e34\u0e15  (lec-lab-hw)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_rnrz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_omwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Text",
+   "label": "\u0e2b\u0e21\u0e32\u0e22\u0e40\u0e2b\u0e15\u0e38"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-07 15:25:36.066372",
+ "modified": "2024-03-10 09:52:44.748235",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "Course",

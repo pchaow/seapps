@@ -1,8 +1,8 @@
 app_name = "seapps"
-app_title = "Software Engineer Apps"
-app_publisher = "SE@UP"
-app_description = "Software Engineer Department App"
-app_email = "chaow.po@up.ac.th"
+app_title = "Seapps"
+app_publisher = "test"
+app_description = "test"
+app_email = "test@test.test"
 app_license = "mit"
 # required_apps = []
 
@@ -221,7 +221,7 @@ app_license = "mit"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
-export_python_type_annotations = True
+# export_python_type_annotations = True
 
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs

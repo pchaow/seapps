@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class Course(Document):
+class Semester(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,18 +14,11 @@ class Course(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		code: DF.Data | None
-		course_code: DF.Data
-		course_desc_en: DF.Text | None
-		course_desc_th: DF.Text | None
-		course_name_en: DF.Data
-		course_name_th: DF.Data
-		course_objective: DF.TextEditor | None
-		course_type: DF.Link
-		credit: DF.Int
-		credit_assign: DF.Data
-		program: DF.Link
-		remark: DF.Text | None
+		semester: DF.Literal["1", "2", "3"]
+		year: DF.Data
 	# end: auto-generated types
+
+	def autoname(self) :
+		self.name = f"{self.year:>04}-{self.semester:>02}"
 
 	pass

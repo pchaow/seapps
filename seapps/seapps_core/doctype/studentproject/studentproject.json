@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-11 15:17:45.460021",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "semester",
+  "project_descriptoin",
+  "advisor",
+  "project_operators"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0e0a\u0e37\u0e48\u0e2d\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project_descriptoin",
+   "fieldtype": "Long Text",
+   "label": "\u0e04\u0e33\u0e2d\u0e18\u0e34\u0e1a\u0e32\u0e22"
+  },
+  {
+   "fieldname": "advisor",
+   "fieldtype": "Table",
+   "label": "\u0e2d\u0e32\u0e08\u0e32\u0e23\u0e22\u0e4c\u0e17\u0e35\u0e48\u0e1b\u0e23\u0e36\u0e01\u0e29\u0e32",
+   "options": "ProjectAdvisor"
+  },
+  {
+   "fieldname": "project_operators",
+   "fieldtype": "Table",
+   "label": "\u0e1c\u0e39\u0e49\u0e14\u0e33\u0e40\u0e19\u0e34\u0e19\u0e42\u0e04\u0e23\u0e07\u0e01\u0e32\u0e23",
+   "options": "ProjectOperator"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u0e20\u0e32\u0e04\u0e40\u0e23\u0e35\u0e22\u0e19",
+   "options": "Semester",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-11 15:35:37.586707",
+ "modified_by": "Administrator",
+ "module": "seapps_core",
+ "name": "StudentProject",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

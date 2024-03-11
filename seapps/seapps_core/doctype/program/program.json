@@ -15,10 +15,13 @@
   "adapt_from",
   "program_type",
   "objectives_tab",
+  "program_objective_section",
   "objective_table",
-  "elo_tab",
+  "plo_tab",
+  "program_elos_section",
   "lo_datatable",
-  "courses_tab"
+  "courses_tab",
+  "course_table"
  ],
  "fields": [
   {
@@ -79,11 +82,6 @@
    "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
   },
   {
-   "fieldname": "elo_tab",
-   "fieldtype": "Tab Break",
-   "label": "ELO"
-  },
-  {
    "fieldname": "lo_datatable",
    "fieldtype": "HTML",
    "label": "\u0e1c\u0e25\u0e01\u0e32\u0e23\u0e40\u0e23\u0e35\u0e22\u0e19\u0e23\u0e39\u0e49"
@@ -97,11 +95,32 @@
    "fieldname": "objective_table",
    "fieldtype": "HTML",
    "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
+  },
+  {
+   "fieldname": "course_table",
+   "fieldtype": "HTML",
+   "label": "\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32",
+   "options": "<h1>\u0e23\u0e32\u0e22\u0e27\u0e34\u0e0a\u0e32</h1>"
+  },
+  {
+   "fieldname": "program_objective_section",
+   "fieldtype": "Section Break",
+   "label": "\u0e27\u0e31\u0e15\u0e16\u0e38\u0e1b\u0e23\u0e30\u0e2a\u0e07\u0e04\u0e4c"
+  },
+  {
+   "fieldname": "program_elos_section",
+   "fieldtype": "Section Break",
+   "label": "\u0e1c\u0e25\u0e01\u0e32\u0e23\u0e40\u0e23\u0e35\u0e22\u0e19\u0e23\u0e39\u0e49 (PLO)"
+  },
+  {
+   "fieldname": "plo_tab",
+   "fieldtype": "Tab Break",
+   "label": "PLO"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-10 00:55:21.101052",
+ "modified": "2024-03-10 01:07:51.005355",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "Program",
