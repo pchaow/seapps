@@ -20,6 +20,8 @@
   "plo_tab",
   "program_elos_section",
   "lo_datatable",
+  "alignment_tab",
+  "program_alignment",
   "courses_tab",
   "course_table"
  ],
@@ -116,11 +118,21 @@
    "fieldname": "plo_tab",
    "fieldtype": "Tab Break",
    "label": "PLO"
+  },
+  {
+   "fieldname": "alignment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Alignment"
+  },
+  {
+   "fieldname": "program_alignment",
+   "fieldtype": "HTML",
+   "label": "Program Alignment"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-10 01:07:51.005355",
+ "modified": "2024-03-12 16:24:27.086998",
  "modified_by": "Administrator",
  "module": "seapps_core",
  "name": "Program",
