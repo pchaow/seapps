@@ -1,0 +1,15 @@
+{
+  "name": "seapps_core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd student-project && yarn install",
+    "dev": "cd student-project && yarn dev",
+    "build": "cd student-project && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

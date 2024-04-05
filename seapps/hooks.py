@@ -227,3 +227,5 @@ export_python_type_annotations = True
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+website_route_rules = [{'from_route': '/student/<path:app_path>', 'to_route': 'student'}, {'from_route': '/student/<path:app_path>', 'to_route': 'student'}, {'from_route': '/student/<path:app_path>', 'to_route': 'student'}, {'from_route': '/student-project/<path:app_path>', 'to_route': 'student-project'}, {'from_route': '/student-project/<path:app_path>', 'to_route': 'student-project'}, {'from_route': '/student-project/<path:app_path>', 'to_route': 'student-project'},]
